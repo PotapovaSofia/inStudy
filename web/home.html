@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Домашняя страница</title>
+        <meta charset="utf-8">
+        <!--<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">-->
+        <link rel="stylesheet" type="text/css" href="css/pages.css">
+        <link rel="stylesheet" type="text/css" href="css/landing.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css" />
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/timepicki.css" />
+        <link rel="stylesheet" type="text/css" href="css/wickedpicker.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/tools.css">
+
+
+        <!--
+        <link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/base/jquery-ui.css">
+    --> 
+        
+    </head>
+<body class="bit-p-main">
+<div id="app">
+<div id="background-wrapper"></div>
+<div id="background-wrapper--add_new"></div>
+<div class="common-positioner">
+   
+ 
+    <script type="text/html" id="welcome">
+<div class="main-background">
+    <header>
+        <div id="navbar-wrap">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <div class="logo-img"></div>
+                    <div class="logo-text">InStudy</div>
+                </div>
+                <div class="right-panel">Sign IN</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="land-content">
+            <div class="sign-up-form">
+                <div class="bit-entry">
+                    <div class="bit-entry-head">
+                        <h1 class="bit-entry-title">Welcome</h1>
+                    </div>
+                    <div class="bit-entry-content">
+                        <div class="bit-entry-form">
+                            <form id="sign-in-form" method="#" data-parsley-validate>
+                                <div class="bit-entry-form-row">
+                                    <input class="bit-input-login bit-placeholder" id="sign-in__email" maxlength="254" name="email" placeholder="E-mail" type="text">
+                                </div>
+                                <div class="bit-entry-form-row">
+                                    <input class="bit-input-password bit-placeholder" id="sign-in__password" name="password" placeholder="Password" type="password">
+                                </div>
+                                <div class="bit-entry-form-row">
+                                    <div class="bit-button open-schedule-butto sign-in" id="sign-in">SIGN IN</div>
+                                </div>
+                                <!--
+                                <div class="bit-entry-form-row">
+                                    <div id="to-sign-up">SIGN UP</div>
+                                </div>
+                                -->
+                            </form>
+                            <!--
+                                <div class="bit-entry-form-row anim-class bit-animate">
+                                    <a  id="sing-in-to-sign-up">SIGN UP</a>
+                                </div>
+                            
+                            <div class="bit-entry-form-row anim-class bit-socials bit-animate">
+                                <div class="bit-separator">
+                                    
+                                    <span class="bit-separator-text">или войти через</span>
+
+                                </div>
+                                <div class="bit-entry-social">
+                                    <a href="/img/social/login/vk-oauth2/" class="bit-ico bit-ico-soc-vk-big"></a>
+                                    <a href="/img/social/login/facebook/" class="bit-ico bit-ico-soc-fb-big"></a>
+                                    <a href="/img/social/login/facebook/" class="bit-ico bit-ico-soc-gg-big"></a>
+                                </div>
+                            </div>
+                            <div class="bit-entry-form-notice">
+                                Регистрируясь на Сервисе InStudy.Ru или осуществляя вход на Сервис, Вы соглашаетесь с условиями
+                                <a href="pages/agreement/">Пользовательского соглашения</a>
+                            </div>
+                        -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup--top">
+            <div>Письмо для активации отправлено Вам на почту</div>
+            <div class="bit-entry-form-row">
+                <input class="bit-input-login bit-placeholder" id="id_email" maxlength="254" name="email" placeholder="E-mail" type="text">
+            </div>
+            <div class="bit-entry-form-row">
+                <input class="bit-input-password bit-placeholder" id="id_password" name="password" placeholder="Password" type="password">
+            </div>
+            <a href="#activate" id="activate__button--tmp" class="sign-in">Активироваться нахаляву</a>
+        </div>
+
+        <div id="popup--right">
+            <form id="sign-up__form" >
+                <div id="sign-up__form">
+                    <div class="bit-entry-form-row">
+                        <input class="input-block bit-placeholder" id="sign_up__email" maxlength="254" name="email" placeholder="E-mail" type="text" required>
+                    </div>
+                    <div class="bit-entry-form-row">
+                        <input class="input-block bit-placeholder" id="sign_up__password" name="password" placeholder="Пароль" type="password" required>
+                    </div>
+                    <div class="bit-entry-form-row">
+                        <input class="input-block bit-placeholder" id="sign_up__first_name" type="text" placeholder="Имя"/ required>
+                    </div>
+                    <div class="bit-entry-form-row">
+                        <input class="input-block bit-placeholder" id="sign_up__last_name" type="text" placeholder="Фамилия"/ required>
+                    </div>
+
+                    <!--<div class="bit-button" id="sign-up">SIGN UP</div>-->
+
+                    
+                </div>
+            </form>
+        </div>
+
+    </main>
+    </script>
+    
+    <script type="text/html" id="error-template">
+        ERROR PAGE
+    </script>
+    
+
+    <script type="text/html" id="courses">
+    <div id="courses__positioner">
+        <ul id="courses-content"></ul>
+        <div class="right_button" id="show_hidden_courses" title="Отображать скрытые курсы"></div>
+        <div class="right_button" id="hide_hidden_courses" title="Не отображать скрытые курсы"></div>
+        <div class="right_button" id="show_ended_courses" title="Отображать прошедшие курсы"></div>
+        <div class="right_button" id="hide_ended_courses" title="Не отображать прошедшие курсы"></div>
+        
+        <div id="add__button">
+            <div class="add__ico" id="add__ico--shown"></div>
+        </div>
+        <div id="popup--right">
+        <div id="add_course__positioner">
+            <ul id="add_course__container">
+                <li class="add_course__li">
+                    <div class="add_course__title" id="add_course--1">Стать преподавателем курса</div>
+                    <div class="add_course__form" id="add_course--1__block">
+                        <form id="add_courses--teacher__form" >
+                            <input id="add_course--teacher__name" class="add_course__input" type="text" placeholder="Название"/ required autofocus>
+                            <textarea id="add_course--teacher__description" class="add_course__input add_course__textarea" placeholder="Описание"></textarea>
+                            <select name="course_type" id="add_course--teacher__course_type"  class="add_course__input add_course__select" required>
+                                <option value=''>Тип занятия</option>
+                                <option value="L">Лекция</option>
+                                <option value="S">Семинар</option>
+                                <option value="P">Практика</option>
+                            </select>
+                            <input id="add_course--teacher__start_day" type="text" class="add_course__input" placeholder="Дата начала" required/>
+                            
+                            <input id="add_course--teacher__end_day" type="text" class="add_course__input" placeholder="Дата окончания" required/>
+                            <div id="select-university--teacher"></div>
+                            <input type="submit" id="add_course--teacher" class="add_course__input add_course__submit add_course__next" value="Сохранить и Продолжить"></input>
+                        </form>
+                    </div>
+               </li>
+               <li class="add_course__li">
+                    <div class="add_course__title" id="add_course--2">Создать свой курс</div>
+                    <div class="add_course__form" id="add_course--2__block">
+                        <form id="add_courses--own__form" >
+                            <input id="add_course--own__name" class="add_course__input" type="text" placeholder="Название" required autofocus>
+                            <input id="add_course--own__teacher" class="add_course__input" type="text" placeholder="Преподаватель"/>
+                            <textarea id="add_course--own__description" class="add_course__input add_course__textarea" placeholder="Описание"></textarea>
+                            <select required name="course_type" id="add_course--own__course_type" class="add_course__input add_course__select" >
+                                <option value=''>Тип занятия</option>
+                                <option value="L">Лекция</option>
+                                <option value="S">Семинар</option>
+                                <option value="P">Практика</option>
+                            </select>
+                            <input id="add_course--own__start_day" class="add_course__input" type="text" placeholder="Дата начала" required/>
+                            <input id="add_course--own__end_day" type="text" class="add_course__input"placeholder="Дата окончания" required/>
+                             <input type="submit" id="add_course--own" value="Сохранить и Продолжить" class="add_course__input add_course__submit add_course__next"></input>
+                        </form>
+                    </div>
+               </li>
+               <li class="add_course__li">
+                    <div class="add_course__title" id="add_course--3">Присоединиться к курсу</div>
+                    <div class="add_course__form" id="add_course--3__block">
+                        <form id="add_courses--join__form" >
+                            <select name="university" id="add_course--join__university" class="add_course__input add_course__select" required>
+                            </select>
+                            <select name="name" id="add_course--join__id" class="add_course__input add_course__select" required>
+                                <option value=''disabled selected>Курс</option>
+                            </select>
+                            <input id="add_course--join__secret_word" class="add_course__input"type="text" placeholder="Секретное слово"/>
+                            <input type="submit" id="add_course--join" class="add_course__input add_course__submit" value="Присоединиться"></input>
+                        </form>
+                    </div>
+               </li>
+            </ul>
+            <ul id="add_event__container"></ul>
+            <div id="add_event--shown">
+                <div id="add_event__button" type="text"> 
+                    <div id="add_event__ico"></div>
+                    <div id="add_event__title">Добавить событие</div>
+                </div>
+            </div>
+            <div id="add_event--hidden">
+                <form id='add_event__form'>
+                    <input id="add_course--event__time" class="add_course__input" type="text" placeholder="Время начала" required autofocus>
+                    <input id="add_course--event__duration" class="add_course__input" type="text" placeholder="Продолжительность" required>
+                    <input id="add_course--event__location" class="add_course__input" type="text" placeholder="Место проведения">
+                    <label><input id="add_course--event__is_periodic" class="checkbox checkbox__is_periodic" type="checkbox">Каждую неделю</label>
+                    <br>
+                    <select id="add_course--event__is_odd"  class="add_course__input add_course__select" disabled>
+                            <option value='null'>Любая неделя</option>
+                            <option value="False">Четные недели</option>
+                            <option value="True">Нечетные недели</option>
+                        </select>
+                    
+                    <select name="course_type" id="add_course--event__day_of_week"  class="add_course__input add_course__select" disabled required>
+                        <option value='' disabled>День недели</option>
+                        <option value="1">Понедельник</option>
+                        <option value="2">Вторник</option>
+                        <option value="3">Среда</option>
+                        <option value="4">Четверг</option>
+                        <option value="5">Пятница</option>
+                        <option value="6">Суббота</option>
+                        <option value="0">Воскресенье</option>
+                    </select>
+                    <input id="add_course--event__oneoff_date" class="add_course__input" type="text" placeholder="Дата проведения" required>
+                    <input type="submit" id="add_course--event" class="add_course__input add_course__submit" value="Создать"></input>
+                </form>
+            </div>
+            <div class="add__ico" id="add__ico--hidden"></div>
+        </div>
+        </div>
+    </div>
+    </script>
+
+    <script type="text/template" id="select-university--teacher__template">
+        <select name="university" id="add_course--teacher__university" class="add_course__input add_course__select" required>
+            <!--<option value='' disabled selected>Университет</option>-->
+            <% _.each( teacher_at_universities, function(uni) { %>
+                <option value="<%=uni.id%>"><%=uni.name%></option>
+            <% }); %>
+        </select>
+    </script>
+    <script type="text/template" id="select-university--student__template">
+        <option value="<%=id%>"><%=name%></option>
+    </script>
+
+    <script type="text/template" id="select-course--student__template">
+        <option value="<%=id%>"><%=name%>
+        <% if (course_type === "L") {%> (Лекция)
+        <% } else if (course_type === "S") {%> (Семинар)
+        <% } else if (course_type === "P") {%> (Практика)
+        <% } %>
+        </option>
+     </script>
+
+     <script type="text/template" id="event_added-template">
+        <li class="add_event__li">
+            <div class="add_event__point"></div>
+            <div class="add_event__short_info">
+                <% if (is_periodic == true) { %>
+                    <%=day_of_week_name%>&nbsp&nbsp
+                    <%=time.split(":")[0]%> : <%=time.split(":")[1]%>
+                <%} else {%>
+                    <%=oneoff_date_name%>
+                <%}%>
+            </div>
+            <!--
+            <div class="add_event__change" id="add_event__change--<%=id%>"></div>
+            <div class="add_event__change add_event__change--red" id="add_event__change--<%=id%>"></div>
+            <div class="add_event__delete" id="add_event__delete--<%=id%>" title="Удалить событие"></div>
+            -->
+        </li>
+     </script>
+
+    <script type="text/template" id="course-template">
+        <li class="course-wrapper">
+            <div class="course__info--vision">
+                <div class="course__info--left">
+                    <%if (is_private == true) {%>
+                        <a href="#courses/<%= id %>/course-settings" class="href_to_course">
+                    <%} else {%>
+                        <a href="#courses/<%= id %>/news" class="href_to_course">
+                    <%}%>                    
+                        <div class='course__title'>
+                            <%= name %>
+                        </div>
+                    </a>
+                    <div class="course__teachers">
+                        <% _.each( registered_teachers, function(teacher) { %>
+                            <div class="course__teacher">
+                                <%= teacher.first_name %>
+                                <%= teacher.middle_name %>
+                                <%= teacher.last_name %>                                
+                            </div>
+                        <% }); %>
+                        <%= unregistered_teachers %>
+                    </div>
+                </div>
+                <div id="course__button--<%= id %>" class="arrow--orange"></div>
+            </div>
+            <div class="course__info--nonvision" id="show-course__button--<%= id %>">
+                <div class="course__description">
+                    <%=description%>
+                </div>
+                <br>
+                <div class='course__time'>
+                    <b>Дата начала: </b><%= start_date_name %><br> <b>Дата окончания: </b><%= end_date_name %>
+                </div>
+
+            </div>
+       </li>
+    </script>
+
+    <script type="text/html" id="settings">
+        <div id="settings-content" class="content">
+            <!--<a href="home" id="log-out">LOG OUT</a>-->
+       
+            <div class="settings-profile__title">Изменить информацию о себе</div>
+            <form id="setting__form">
+                <input class="bit-entry-form-row settings-input" id="settings__first_name" maxlength="254" name="first_name" placeholder="Имя" type="text">
+                <input class="bit-entry-form-row settings-input" id="settings__last_name" name="name" placeholder="Фамилия" >
+                <input class="bit-entry-form-row settings-input" id="settings__middle_name" name="name" placeholder="Отчество" >
+                <select name="university" class="select-university--sign_up settings__select">
+                    <option selected required value="">Университет</option>
+                </select>
+                <select name="group" class="select-group--sign_up settings__select"></select>
+                <div class="bit-entry-form-row">
+                    <div class="bit-button" id="settings__button--change">Изменить</div>
+                </div>
+            </form>
+         </div>
+    </script>
+
+    <script type="text/template" id="select-group__template">
+        <option value="<%=id%>"><%=name%></option>
+    </script>
+
+    <script type="text/html" id="activate">
+        <div id="activate__content" class="content">
+            <form id="activate__form" >
+                <input class="bit-entry-form-row" id="activate__middle_name" type="text" placeholder="Отчество"><br>
+                <select class="select-university--sign_up" name="university">
+                    <option selected required value="">Университет</option>
+                </select>
+                <select class="select-group--sign_up" name="group" id="select-group--activate"></select>
+                <div id="activate__button">Продолжить<div>
+            </form>
+        </div>
+    </script>
+
+    <script type="text/template" id="select-university--sign_up__template">
+        <option value="<%=id%>"><%=name%></option>
+     </script>
+
+     <script type="text/template" id="select-group--sign_up__template">
+        <option value="<%=id%>"><%=name%></option>
+     </script>
+
+    <script type="text/html" id="feed">
+        <div id="feed-content" class="content"></div>
+    </script>
+ 
+    <script type="text/html" id="course-news">
+        <div id="news__positioner">
+            <form id="add_news" enctype="multipart/form-data">
+                <input id="add_new__input" class="add_new__input" text="text" placeholder="">
+                <div id="add_new__context" class="add_new__context">
+                    <div id="add_new__image" class="add_new__image"></div>
+                    <div id="add_new__info" class="add_new__info">
+                        <input id="add_new__title" class="add_new__title" type="text" placeholder="Тема"/>
+                        <div class="attachment__textarea">
+                            <textarea id="add_new__textarea" class="add_new__textarea" type="text" placeholder="Текст"></textarea>
+                            <div class="attachment__button"></div>
+                        </div>
+                        <div class="attachments"></div>
+                        
+
+                        <button id="add_new__button" class="add_new__button">Отправить</button>
+                    </div>
+                </div>
+            </form>
+            <div id="course-news-content" class="content"></div>
+        </div>
+ 
+    </script>
+    <script type="text/template" id="attachment-template">
+        <div class="attachment__popup">
+            <div class="attachment__block">
+                <input type="file" name="fileToUpload" id="fileToUpload" value="">
+            </div>
+            <div class="attachment__cross"></div>
+        </div>
+    </script>
+
+    <script type="text/template" id="new-template">
+        <div class="new-wrapper">
+            <div class="post__image" style="background-image:url(<%=author.avatar_64%>);"></div>
+            <div class="post__info">
+                <div class="new__author">
+                    <div class="new__author__name"><%=author.first_name%> <%=author.last_name%></div>
+                    <div class="new__author__time"><%= add_date %></div>
+                </div>
+                <a href='<%= id %>' class="new__main-content">
+                <!--
+                    <div class="new__title">
+                        <%= title %>
+                    </div>
+                -->
+                    <div class="new__text">
+                        <%= text %> 
+                    </div>
+                    <% if(attached_comment) { %>
+                    <% if(attached_comment.length != 0) { %>
+                    <div class="attached_comment">
+                        <div class="attached_comment__image" style="background-image:url(<%=attached_comment.author.avatar_64%>);"></div>
+                        <div class="attached_comment__info">
+                            <div class="attached_comment__author"><%=attached_comment.author.first_name%> <%=attached_comment.author.last_name%></div>
+                            <div class="attached_comment__text"><%=attached_comment.text%></div>
+                            <div class="attached_comment__time"><%=attached_comment.add_time%></div>
+                        </div>
+                    </div>
+                    <% }} %>
+                </a>
+                <span class="comment__button" id="comment--<%=id%>">
+                    Показать комментарии(<%=comments_count%>)
+                </span>
+                <div class="delimeter__main" id="comment--<%=id%>__delimeter"></div>
+                <div class="comment__list" id="comment--<%=id%>__list">
+                    <!--comments-->
+                </div>
+                <form class="comment__form" id="comment--<%=id%>__form">
+                    <div class="add_comment__image"></div>
+                    <div class="add_comment__input" id="comment--<%=id%>">
+                        <textarea class="add_comment__textarea" id="comment--<%=id%>__textarea" placeholder="Комментировать..."></textarea>
+                        <div class="add_comment__submit" id="comment--<%=id%>__submit">Отправить</div>
+                    </div>
+                </form>
+            </div>
+       </div>
+    </script>
+
+    <script type="text/template" id="comment-template">
+        <div class="comment__wrapper">
+            <div class="comment__image" style="background-image:url(<%=author.avatar_64%>);"></div>
+            <div class="comment__info">
+                <div class="comment__author__name">
+                    <%= author.first_name %> <%= author.last_name %>
+                </div>
+                <div class="comment__text">
+                    <%= text %>
+                </div>
+                <div class="comment__author__time">
+                    <%= add_date %>
+                </div>
+            </div>
+        </div>
+        <div class="delimeter"></div>
+    </script>
+
+    <script type="text/html" id="course-chat">
+        <div class="chat__positioner">
+            <div class="chat-content-positioner">
+                <div id="course-chat-content" class="content"></div>
+            </div>
+
+            <div id="add_message_wrap">
+                <form id="add_message_form" >
+                    <div class="add_message__image" ></div>
+                    <div class="add_message__input">
+                        <textarea id="add_message_text" type="text" placeholder="Поделиться мыслью..."></textarea>
+                        <div id="add_message__submit">Сохранить</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </script>
+ 
+    <script type="text/template" id="message-template">
+        <div class="message-wrapper">
+        <div class="message__image"style="background-image:url(<%=author.avatar_64%>);"></div>
+        <div class="message__input">
+            <div class="message__author"> 
+                <% if (anonymous == false) { %>
+                    <%= author.first_name %> <%= author.last_name %>
+                <% } else { %>
+                    Анонимный парень
+                <% } %>
+            </div>
+            <%= text %>
+         </div>
+         <div class="message__time"><%=add_date%></div>
+       </div>
+    </script>
+
+    <script type="text/html" id="course-checkin">
+        <div>
+            <div id="checkin-img"></div>
+            <div class="checkin-phrase">
+                Successfully checked in
+                <ul id="course-checkin-content"></ul>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template" id="checkin-template">
+        <li class="checkin-wrapper">
+            <%= title %>
+       </li>
+    </script>
+
+
+    <script type="text/html" id="course-settings">
+        <div class="settings__positioner">
+            <div class="settings__column" id="course_settings--info">
+                <div class="settings__title">Информация о курсе</div>
+                <form id="course_settings__form">
+                    <input id="course_settings__name" class="settings__input" type="text">
+                    <input id="course_settings__teacher" class="settings__input" type="text"/>
+                    <textarea id="course_settings__description" class="settings__input settings__textarea" placeholder="Описание"></textarea>
+                    <select name="course_type" id="course_settings__course_type" class="settings__input settings__select" >
+                        <option value="L">Лекция</option>
+                        <option value="S">Семинар</option>
+                        <option value="P">Практика</option>
+                    </select>
+                    <input id="course_settings__start_day" class="settings__input" type="text" placeholder="Дата начала"/>
+                    <input id="course_settings__end_day" type="text" class="settings__input"placeholder="Дата окончания"/>
+                     <input type="submit" id="course_settings__button" value="Изменить" class="settings__input settings__submit">
+                </form>
+            </div>
+            <div class="settings__column" id="course_settings--events">
+                <div class="settings__title" style="padding-left:30px">События</div>
+                <div id="setting_event__container"></div>
+                <div id="setting_event--shown">
+                    <div id="setting_event__button" type="text"> 
+                        <div id="setting_event__ico" class="setting_event__ico"></div>
+                        <div id="setting_event__title">Добавить событие</div>
+                    </div>
+                </div>
+                <div id="setting_event--hidden">
+                    <div id="setting_event__ico--2" class="setting_event__ico"></div>
+                    <form id='setting_event__form'>
+                        <input id="setting_course--event__time" class="settings__input" type="text" placeholder="Время начала" name="timepicker" required>
+                        <input id="setting_course--event__duration" class="settings__input" type="text" placeholder="Продолжительность" required>
+                        <input id="setting_course--event__location" class="settings__input" type="text" placeholder="Место проведения">
+                        <input id="setting_course--event__is_periodic" class="checkbox checkbox__is_periodic" type="checkbox"><label text="">  Каждую неделю</label>
+                        <br>
+                        <select id="setting_course--event__is_odd"  class="settings__input add_course__select" disabled>
+                            <option value='null'>Любая неделя</option>
+                            <option value="False">Четные недели</option>
+                            <option value="True">Нечетные недели</option>
+                        </select>
+                        
+                        <select id="setting_course--event__day_of_week"  class="settings__input add_course__select" disabled required>
+                            <option value='' disabled>День недели</option>
+                            <option value="1">Понедельник</option>
+                            <option value="2">Вторник</option>
+                            <option value="3">Среда</option>
+                            <option value="4">Четверг</option>
+                            <option value="5">Пятница</option>
+                            <option value="6">Суббота</option>
+                            <option value="0">Воскресенье</option>
+                        </select>
+                        <input id="setting_course--event__oneoff_date" class="settings__input" type="text" placeholder="Дата проведения" required>
+                        <input type="submit" id="setting_course--event" class="settings__input change--event__submit" value="Сохранить"></input>
+                    </form>
+                </div>
+            </div>
+            <div id="course_delete__button">Удалить курс</div>
+            <div id="course_hide__button">Скрыть курс</div>
+            <div id="course_unhide__button">Показывать курс</div>
+            <div id="course_unfollow__button">Отписаться от курса</div>
+        </div>
+    </script>
+
+    <script type="text/template" id="event_setting-template">
+        <div class="setting_event__li">
+            <div class="settings__point"></div>
+            <div class="add_event__short_info">
+                <% if (is_periodic == true) { %>
+                    <%=day_of_week_name%> &nbsp&nbsp
+                    <%=time.split(":")[0]%> : <%=time.split(":")[1]%>
+                <%} else {%>
+                    <%=oneoff_date_name%>
+                <%}%>
+            </div>
+            <div class="add_event__delete" id="setting_event__delete--<%=id%>" title="Удалить событие"></div>
+            <div class="add_event__change" id="setting_event__change--<%=id%>" title="Изменить событие"></div>
+            <div class="add_event__change--red add_event__change" id="setting_event__change--<%=id%>--red"></div>
+            <br>
+            <div class="change--event--hidden" id="change--event--<%=id%>">
+                <form id='change--event__form--<%=id%>' class="change--event__form--settings">
+                    <input id="change--event__time--<%=id%>" class="settings__input" type="text" placeholder="Время начала">
+                    <input id="change--event__duration--<%=id%>" class="settings__input" type="text" placeholder="Продолжительность">
+                    <input id="change--event__location--<%=id%>" class="settings__input" type="text" placeholder="Место проведения">
+                    <label><input id="change--event__is_periodic--<%=id%>" class="checkbox checkbox__is_periodic" type="checkbox">Каждую неделю</label>
+                    <br>
+                    <select id="change--event__is_odd--<%=id%>"  class="settings__input add_course__select" disabled>
+                        <option value='null'>Любая неделя</option>
+                        <option value="False">Четные недели</option>
+                        <option value="True">Нечетные недели</option>
+                    </select>
+                    <select id="change--event__day_of_week--<%=id%>"  class="settings__input add_course__select" disabled required>
+                        <option value='' disabled>День недели</option>
+                        <option value="1">Понедельник</option>
+                        <option value="2">Вторник</option>
+                        <option value="3">Среда</option>
+                        <option value="4">Четверг</option>
+                        <option value="5">Пятница</option>
+                        <option value="6">Суббота</option>
+                        <option value="0">Воскресенье</option>
+                    </select>
+                    <input id="change--event__oneoff_date--<%=id%>" class="settings__input" type="text" placeholder="Дата проведения" required>
+                    <input type="submit" id="change--event--<%=id%>" class="settings__input change--event__submit" value="Изменить"></input>
+                </form>
+            </div>
+        </div>
+     </script>
+     <!--
+     <label id="change--event__is_even--<%=id%>__label" class="label--hidden"><input id="change--event__is_even--<%=id%>" class="checkbox checkbox__is_even" type="checkbox" disabled>Только по четным неделям</label>
+                    <br>
+                    <label id="change--event__is_odd--<%=id%>__label" class="label--hidden"><input id="change--event__is_odd--<%=id%>" class="checkbox checkbox__is_odd" type="checkbox" disabled>Только по нечетным неделям</label>
+                -->
+
+     <script type="text/html" id="schedule">
+     <div id="schedule-content">
+        <div id="schedule-wrapper">
+            <div class="timeline__time">
+                <div class="timeline__time__container">08 : 00</div>
+                <div class="timeline__time__container">10 : 00</div>
+                <div class="timeline__time__container">12 : 00</div>
+                <div class="timeline__time__container">14 : 00</div>
+                <div class="timeline__time__container">16 : 00</div>
+                <div class="timeline__time__container">18 : 00</div>
+                <div class="timeline__time__container">20 : 00</div>
+                <div class="timeline__time__container">22 : 00</div>
+            </div>
+            <div class="timeline__line">
+                <div class="timeline__point"></div>
+                <div class="timeline__point"></div>
+                <div class="timeline__point"></div>
+                <div class="timeline__point"></div>
+                <div class="timeline__point"></div>
+                <div class="timeline__point"></div>
+                <div class="timeline__point"></div>
+                <div class="timeline__point"></div>
+            </div>
+            <div class="week__column">
+                <div class="week__title">Понедельник</div>
+                <div id="week__column--1" class="week__column__content"></div>
+            </div>
+            <div class="week__column">
+                <div class="week__title">Вторник</div>
+                <div id="week__column--2" class="week__column__content"></div>
+            </div>
+            <div class="week__column">
+                <div class="week__title">Среда</div>
+                <div id="week__column--3" class="week__column__content"></div>
+            </div>
+            <div class="week__column">
+                <div class="week__title">Четверг</div>
+                <div id="week__column--4" class="week__column__content"></div>
+            </div>
+            <div class="week__column">
+                <div class="week__title">Пятница</div>
+                <div id="week__column--5" class="week__column__content"></div>
+            </div>
+            <div class="week__column">
+                <div class="week__title">Суббота</div>
+                <div id="week__column--6" class="week__column__content"></div>
+            </div>
+            <div class="week__column">
+                <div class="week__title">Воскресенье</div>
+                <div id="week__column--0" class="week__column__content"></div>
+            </div>
+        </div>
+        <div class="week-picker"></div>
+        <div id="calendar__button">
+            <div class="calendar__ico"></div>
+        </div>
+    </div>
+
+    </script>
+
+    <script type="text/template" id="course-card-template">
+        <%if (is_private == true) {%>
+            <a href="#courses/<%= course_id %>/course-settings" class="href_to_course">
+        <%} else {%>
+            <a href="#courses/<%= course_id %>/news" class="href_to_course">
+        <%}%>  
+        <!--<a href="#courses/<%= course_id %>/news">-->
+        <div class="course__card" style="top:calc((100% / 16) * (<%= start_hour %> - 7) + (100% / (16 * 12)) * (<%= start_minute / 5%>)); height:calc((100% / (16 * 12)) * <%= duration / 5 | 0%> ); background-color: 
+            <% if (course_type == 'L') { %> #ffffcc <%} else if (course_type == 'S') {%> #f1f1f1 <%}%>
+        " title="<%= course_name %>">
+            <%= start_hour %> :
+            <% if (start_minute == 0) {%>
+                00
+            <% } else if (start_minute < 10) {%>
+                0<%= start_minute %> 
+            <% } else {%>
+                <%= start_minute %> 
+            <% } %>
+            -
+            <%= end_hour %> :
+            <% if (end_minute == 0) {%>
+                00
+            <% } else if (start_minute < 10) {%>
+                0<%= start_minute %> 
+            <% } else {%>
+                <%= end_minute %> 
+            <% } %>
+            <div class="course__card__name">
+                <%= course_name %>
+            </div>
+            <%= location %>
+        </div>
+        </a>
+    </script>
+
+
+    <div id="container" class="container"></div>
+</div>
+ 
+    <div id="navbar-wrap">
+        <div class="logo-container">
+            <!--<div class="logo-text">InS</div>-->
+            <div class="logo-img"></div>
+        </div>
+        <ul id="nav-item-container"></ul>
+        <div id="profile__container">
+            <div class="profile__avatar" style="background-image:url(<%=window.localStorage.getItem('inst_pr_ava')%>);"></div>
+            <div class="profile__arrow"></div>
+        </div>
+
+    </div>
+
+    <div id="menu-wrap">
+        <div id="menu-item-container"></div>
+ 
+    </div>
+
+    <div id="profile__menu" class="popup">
+        <div id="profile__content"></div>
+        <a href="#settings">
+            <div class="profile__menu__button settings__button">Settings</div>
+        </a>
+        <div id="log-out" class="profile__menu__button logout__button">Log out</div>
+    </div>
+
+    <script type="text/template" id="profile__template">
+            <%= first_name %>
+            <%= last_name %>
+            
+            <br>
+            <%= middle_name %>
+    </script>
+ 
+    
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+   <!--
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+-->
+    <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js" type="text/javascript"></script>
+    <script src="js/lib/backbone.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min.js" type="text/javascript"></script>
+    <script src="js/lib/parsley.min.js"></script>
+    <script src="js/lib/autoresize.jquery.js"></script>
+    <script src="js/lib/backbone-forms.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment.min.js"></script>
+    <!--<script type="text/javascript" src="/path/to/bootstrap/js/transition.js"></script>
+    <script type="text/javascript" src="/path/to/bootstrap/js/collapse.js"></script>
+-->
+    <script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/lib/timepicki.js"></script>
+    
+
+
+
+    <script src="js/models/profile.js"></script>
+    <script src="js/models/course.js"></script>
+    <script src="js/models/message.js"></script>
+    <script src="js/models/comment.js"></script>
+    <script src="js/collections/comments.js"></script>
+    <script src="js/models/courseNew.js"></script>
+    <script src="js/models/user.js"></script>
+    <script src="js/models/event.js"></script>
+    <script src="js/models/university.js"></script>
+    <script src="js/models/group.js"></script>
+    <script src="js/collections/courses.js"></script>
+    <script src="js/collections/messages.js"></script>
+    <script src="js/collections/courseNews.js"></script>
+    <script src="js/collections/universities.js"></script>
+    <script src="js/collections/groups.js"></script>
+    <script src="js/collections/events.js"></script>
+    <script src="js/views/courseCard.js"></script>
+    <script src="js/views/courseNew.js"></script>
+    <script src="js/views/course.js"></script>
+    <script src="js/views/courses.js"></script>
+    <script src="js/views/feed.js"></script>
+    <script src="js/views/settings.js"></script>
+    <script src="js/views/activate.js"></script>
+    <script src="js/views/courseNews.js"></script>
+    <script src="js/views/courseNew.js"></script>
+    <script src="js/views/comments.js"></script>
+    <script src="js/views/comment.js"></script>
+    <script src="js/views/courseChat.js"></script>
+    <script src="js/views/message.js"></script>
+    <script src="js/views/courseCheckin.js"></script>
+    <script src="js/views/courseSettings.js"></script>
+    <script src="js/views/schedule.js"></script>
+    <script src="js/views/app.js"></script>
+    <script src="js/views/content.js"></script>
+    <script src="js/views/profile.js"></script>
+    <script src="js/views/profilePage.js"></script>
+    <script src="js/views/navbar.js"></script>
+    <script src="js/views/courseMenu.js"></script>
+    <script src="js/views/selectTeacherUniversities.js"></script>
+    <script src="js/views/selectStudentUniversities.js"></script>
+    <script src="js/views/selectStudentCourses.js"></script>
+    <script src="js/views/selectSignUpUniversities.js"></script>
+    <script src="js/views/selectSignUpGroup.js"></script>
+    <script src="js/views/eventsAdded.js"></script>
+    <script src="js/views/eventsChanged.js"></script>
+    <script src="js/routers/router.js"></script>
+</div>
+</body>
+</html>

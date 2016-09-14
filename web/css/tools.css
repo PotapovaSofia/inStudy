@@ -1,0 +1,323 @@
+
+.ui-datepicker-calendar {
+	//background-color: #000;
+}
+.ui-datepicker { 
+	width: 200px; 
+	display: none; 
+	//height: 205px; 
+	margin-top: 0;
+	background: #b00000;
+}
+.ui-datepicker .ui-datepicker-title { 
+	text-align: center; 
+	line-height: 1.8em; 
+	color: #fff;
+}
+.ui-datepicker .ui-datepicker-title select { 
+	font-size: 12px;
+}
+.ui-datepicker table {
+	width: 100%; 
+	font-size: 1em; 
+	border-collapse: collapse;
+}
+.ui-datepicker td { 
+	padding: 1px; 
+}
+.ui-datepicker td span, .ui-datepicker td a { 
+	display: block; 
+	padding: .3em; 
+	text-align: center; 
+	text-decoration: none; 
+}
+.ui-widget { 
+	font-family: Verdana,Arial,sans-serif; 
+	font-size: 10px; 
+}
+.ui-widget .ui-widget { 
+	font-size: 10px; 
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { 
+	font-family: Verdana,Arial,sans-serif; 
+	font-size: 10px; 
+}
+.ui-widget-content { 
+	background: #b00000; 
+	color: rgba(1, 1, 1, 0.6); 
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.ui-widget-header { 
+	position: relative; 
+	color: rgba(1, 1, 1, 0.5); 
+	font-weight: bold; 
+	margin-bottom: 15px; 
+	padding-top: 15px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { 
+	border: 1px solid #b00000; 
+	color: #fff; 
+	padding: 7px 0; 
+	border-radius: 20px;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { 
+	color: #000;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { 
+	color: #000; 
+	text-decoration: none; 
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {
+	font-weight: bold; 
+	//color: #000; 
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+	background: #000; 
+	color: #fff; 
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { 
+	-moz-border-radius-topleft: 2px; 
+	-webkit-border-top-left-radius: 2px; 
+	-khtml-border-top-left-radius: 2px; 
+	border-top-left-radius: 2px; 
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { 
+	-moz-border-radius-topright: 2px; 
+	-webkit-border-top-right-radius: 2px; 
+	-khtml-border-top-right-radius: 2px; 
+	border-top-right-radius: 2px; 
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { 
+	-moz-border-radius-bottomleft: 2px; 
+	-webkit-border-bottom-left-radius: 2px; 
+	-khtml-border-bottom-left-radius: 2px; 
+	border-bottom-left-radius: 2px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { 
+	-moz-border-radius-bottomright: 2px; 
+	-webkit-border-bottom-right-radius: 2px; 
+	-khtml-border-bottom-right-radius: 2px; 
+	border-bottom-right-radius: 2px; 
+}
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { 
+	font-weight: bold; 
+}
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { 
+	opacity: .7; 
+	filter:Alpha(Opacity=70); 
+	font-weight: normal; 
+}
+.ui-datepicker .ui-datepicker-prev { 
+	left: 10px; 
+	background-image: url('../img/ico-arrow-left.png'); 
+	background-size: 50% 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	background-color: #b00000;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { 
+	position:absolute; 
+	width: 1.8em; 
+	height: 1.8em; 
+}
+.ui-datepicker .ui-datepicker-prev { 
+	left:10px; 
+}
+.ui-datepicker .ui-datepicker-next { 
+	right:10px; 
+	background-image: url('../img/ico-arrow-right.png'); 
+	background-size: 50% 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	background-color: #b00000;
+}
+.ui-datepicker .ui-datepicker-prev-hover { 
+	left:10px; 
+}
+.ui-datepicker .ui-datepicker-next-hover { 
+	right:10px; 
+}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { 
+	display: block; 
+	position: absolute; 
+	left: 50%; 
+	margin-left: -8px; 
+	top: 50%; 
+	margin-top: -8px;  
+}
+.ui-datepicker {
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	background: #b00000;
+	color: #fff;
+	//padding-bottom: 10px; 
+}
+.datepicker__header {
+	background-color: #ff751a;
+	width: 100%;
+	height: 60px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+/*
+
+.bootstrap-datetimepicker-widget {
+	list-style-type: none;	
+	display: flex;
+	right: 10px;
+	top: 400px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  margin: 2px 0;
+  padding: 4px;
+  width: 19em;
+  color: #fff;
+  background-color: #d00000;
+  font-size: 10px;
+  box-shadow: 0 0 3px #000;
+
+}
+.bootstrap-datetimepicker-widget .picker-switch td span {
+	display: none;
+}
+.timepicker {
+	display: none;
+}
+*/
+
+.datapicker.dropdown-menu {
+	color: #fff;
+	background-color: #b00000;
+	font-size: 13px;
+	width: 208px;
+
+}
+.datapicker table tr td, .datapicker table tr th {
+	width: 0px;
+	height: 10px;
+}
+.datapicker table tr td.day:hover,
+.datapicker table tr td.day.focused {
+  background: #000;
+  cursor: pointer;
+}
+.datapicker table tr td span:hover,
+.datapicker table tr td span.focused {
+  background: #000;
+}
+.datapicker thead tr:first-child th:hover,
+.datapicker tfoot tr th:hover {
+  background: #000;
+}
+.datapicker table tr td.active:hover,
+.datapicker table tr td.active:hover:hover,
+.datapicker table tr td.active.disabled:hover,
+.datapicker table tr td.active.disabled:hover:hover,
+.datapicker table tr td.active:focus,
+.datapicker table tr td.active:hover:focus,
+.datapicker table tr td.active.disabled:focus,
+.datapicker table tr td.active.disabled:hover:focus,
+.datapicker table tr td.active:active,
+.datapicker table tr td.active:hover:active,
+.datapicker table tr td.active.disabled:active,
+.datapicker table tr td.active.disabled:hover:active,
+.datapicker table tr td.active.active,
+.datapicker table tr td.active:hover.active,
+.datapicker table tr td.active.disabled.active,
+.datapicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datapicker table tr td.active,
+.open .dropdown-toggle.datapicker table tr td.active:hover,
+.open .dropdown-toggle.datapicker table tr td.active.disabled,
+.open .dropdown-toggle.datapicker table tr td.active.disabled:hover {
+  background-color: rgb(153, 153, 153);
+}
+.datapicker table tr td span.active:hover,
+.datapicker table tr td span.active:hover:hover,
+.datapicker table tr td span.active.disabled:hover,
+.datapicker table tr td span.active.disabled:hover:hover,
+.datapicker table tr td span.active:focus,
+.datapicker table tr td span.active:hover:focus,
+.datapicker table tr td span.active.disabled:focus,
+.datapicker table tr td span.active.disabled:hover:focus,
+.datapicker table tr td span.active:active,
+.datapicker table tr td span.active:hover:active,
+.datapicker table tr td span.active.disabled:active,
+.datapicker table tr td span.active.disabled:hover:active,
+.datapicker table tr td span.active.active,
+.datapicker table tr td span.active:hover.active,
+.datapicker table tr td span.active.disabled.active,
+.datapicker table tr td span.active.disabled:hover.active,
+.open .dropdown-toggle.datapicker table tr td span.active,
+.open .dropdown-toggle.datapicker table tr td span.active:hover,
+.open .dropdown-toggle.datapicker table tr td span.active.disabled,
+.open .dropdown-toggle.datapicker table tr td span.active.disabled:hover {
+  background-color: rgb(153, 153, 153);
+}
+.datapicker-dropdown.datapicker-orient-bottom:after {
+	top: 238px;
+	border-top: 6px solid #b00000;
+}
+.datapicker-dropdown.datapicker-orient-bottom:before {
+	top: 0px;
+	border-top: 6px solid #b00000;	
+}
+
+
+
+.wickedpicker {
+	height: 100px;
+}
+.wickedpicker__title {
+	display: none;
+}
+.wickedpicker__controls__control-down, .wickedpicker__controls__control-up {
+	color: #b00000;
+}
+
+
+
+.timepicker_wrap {
+	background-color: #b00000;
+	border-radius: 10px;
+	border: 0px;
+}
+.arrow_top {
+	top: -6px;
+	left: 10px;
+}
+.time, .mins {
+	width: 40px;
+}
+.prevv, .nextt {
+	width: 8%;
+	border: 0px;
+	padding: 14px;
+}
+input.timepicki-input {
+	background-color: #b00000;
+	border: 1px solid #b00000;
+	color: #fff;
+	font-weight: bold;
+	margin-top: -20px;
+}
+input.timepicki-input:autofocus {
+	background-color: green;
+}
+.datepicker-dropdown.datepicker-orient-top:before {
+	top: 2px;
+	border-top: #b00000;
+}
+.datepicker-dropdown.datepicker-orient-top:after {
+	top: 2px;
+	border-top: #b00000;
+}
